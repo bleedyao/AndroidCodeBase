@@ -1,7 +1,7 @@
 # 关于 AndroidCodeBase
 AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控件，进行封装，减少重复代码，提高代码的复用性，同时也不失去应用的性能。
 
-目前支持 `RecyclerView` 的 `adapter` 和 `ViewHolder` 的封装
+支持 `RecyclerView` 的 `adapter` 和 `ViewHolder` 的封装
 
 # 使用
 
