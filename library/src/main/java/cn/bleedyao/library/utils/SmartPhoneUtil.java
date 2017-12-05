@@ -1,4 +1,4 @@
-package com.arcticwind.highrailway.utils;
+package cn.bleedyao.library.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,11 +14,11 @@ public class SmartPhoneUtil {
     private static final String TAG = "SmartPhoneUtil";
 
     public static String getIMEI(Context context) {
-        @SuppressLint("MissingPermission")
+        @SuppressLint({"MissingPermission", "HardwareIds"})
         String Imei = ((TelephonyManager) context
                 .getSystemService(TELEPHONY_SERVICE))
                 .getDeviceId();
-        LogUtil.d(TAG, Imei);
+//        LogUtil.d(TAG, Imei);
         return Imei;
     }
 }

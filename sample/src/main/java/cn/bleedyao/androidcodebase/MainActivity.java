@@ -17,7 +17,7 @@ import cn.bleedyao.library.widget.recyclerview.OnItemClickListener;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRecycleView;
-    private String[] strs = {"懒加载"};
+    private String[] strs = {"懒加载", "mqtt"};
     private List<String> datas = new ArrayList<>();
     private int[] layouts = new int[]{android.R.layout.simple_expandable_list_item_1};
 
@@ -38,7 +38,14 @@ public class MainActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
-                startActivity(new Intent(MainActivity.this,LazyLoadActivity.class));
+                switch (position) {
+                    case 0:
+                        startActivity(new Intent(MainActivity.this, LazyLoadActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MainActivity.this, MqttActivity.class));
+                        break;
+                }
             }
         });
 

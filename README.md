@@ -19,13 +19,14 @@ AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控�
 
 ```groovy
 	dependencies {
-	        compile 'com.github.bleedyao:AndroidCodeBase:lastest'
+	        compile 'com.github.bleedyao:AndroidCodeBase:0.2.0'
 	}
 ```
 
 ## 相关封装
 
 - [x] 支持 `RecyclerView` 的 `adapter` 和 `ViewHolder` 的封装
+- [x] 封装 mqtt 协议的相关数据
 - [ ] Retrofit 和 Rxjava 的封装
 - [ ] Fragment 懒加载封装
 
@@ -43,4 +44,26 @@ AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控�
   * onBinds 中设置布局以及绑定数据
 * 分割线可以使用系统自带 DividerItemDecoration
 * 添加和删除动画可以使用默认动画
+
+
+注：你也可以全部使用多布局适配器，以应对可能会发生改变的需求。
+
+### mqtt 相关说明
+
+使用 mqtt 传输协议，必须执行一下操作
+
+* 添加一下权限
+
+```html
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+* 注册 mqtt 服务
+
+```html
+<!-- Mqtt Service -->
+<service android:name="org.eclipse.paho.android.service.MqttService"/>
+```
 
