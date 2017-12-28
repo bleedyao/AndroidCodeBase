@@ -16,7 +16,7 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 
 public class ArcticWindMqttAndroidClient extends MqttAndroidClient {
     public static String serverUri = "tcp://iot.sensoro.com:1883";
-    public static String clientId = "iWtF60VYn8tz";
+    public static String clientId = "";
     public static boolean bufferEnable = true;
     public static int bufferSize = 100;
     public static boolean persistBuffer = false;
