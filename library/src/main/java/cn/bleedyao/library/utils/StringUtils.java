@@ -7,9 +7,10 @@ import java.util.Locale;
  */
 
 public class StringUtils {
-    private StringUtils(){}
+    private StringUtils() {
+    }
 
-    public static String addValue(String format,Object...obj){
-        return String.format(Locale.CHINA,format,obj);
+    public static String addValue(String format, Object... obj) {
+        return obj == null ? format : String.format(Locale.CHINA, format, obj);
     }
 }

@@ -12,11 +12,11 @@ import android.widget.TextView;
 
 /**
  * Created by yaoluhao on 01/12/2017.
- * 模板 fragment 不建议用于继承，因为 newInstance 方法中的参数需要根据业务需求修改。
+ * 模板 fragment 可在此模板基础上进行扩展，不建议用于继承，因为 newInstance 方法中的参数需要根据业务需求修改。
  * 不建议直接传递 bundle，因为其他开发人员不知道应该使用什么字段作为键，因此在敏捷开发中，建议直接传递参数
  * 实际开发中应该至少出现以下方法（newInstance 参数可不同）
  */
-public class TemplateFragment extends Fragment {
+public final class TemplateFragment extends Fragment {
     private static final String ARG_PARAM = "param_key";
     private Activity mActivity;
     private String mParam;

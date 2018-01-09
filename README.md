@@ -19,7 +19,7 @@ AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控�
 
 ```groovy
 	dependencies {
-	        compile 'com.github.bleedyao:AndroidCodeBase:0.2.0'
+	        compile 'com.github.bleedyao:AndroidCodeBase:lastest_version'
 	}
 ```
 
@@ -28,7 +28,7 @@ AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控�
 - [x] 支持 `RecyclerView` 的 `adapter` 和 `ViewHolder` 的封装
 - [x] 封装 mqtt 协议的相关数据
 - [ ] Retrofit 和 Rxjava 的封装
-- [ ] Fragment 懒加载封装
+- [x] Fragment 懒加载封装
 
 ### RecyclerView 相关封装
 
@@ -67,3 +67,8 @@ AndroidCodeBase 是一个 Android 代码的仓库，用于对经常使用的控�
 <service android:name="org.eclipse.paho.android.service.MqttService"/>
 ```
 
+### 懒加载模块封装
+* 懒加载功能需要和 ViewPager 配合使用
+* 需要实现懒加载功能的 fragment 需要继承 LazyFragment 
+* ViewPager 需要设置 setOffscreenPageLimit() 数量，其数量为 fragment 数量 - 1
+* loadData() 所在的线程为主线程，如需处理耗时操作，请自行开启线程
