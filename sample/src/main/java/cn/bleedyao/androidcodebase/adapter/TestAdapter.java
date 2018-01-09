@@ -1,4 +1,4 @@
-package cn.bleedyao.androidcodebase;
+package cn.bleedyao.androidcodebase.adapter;
 
 import android.content.Context;
 import android.widget.TextView;

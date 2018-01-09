@@ -1,4 +1,4 @@
-package cn.bleedyao.androidcodebase;
+package cn.bleedyao.androidcodebase.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
+import cn.bleedyao.androidcodebase.R;
 import cn.bleedyao.library.mqtt.ArcticWindIMqttActionListener;
 import cn.bleedyao.library.mqtt.ArcticWindMqttAndroidClient;
 import cn.bleedyao.library.mqtt.ArcticWindMqttConnectOptions;
