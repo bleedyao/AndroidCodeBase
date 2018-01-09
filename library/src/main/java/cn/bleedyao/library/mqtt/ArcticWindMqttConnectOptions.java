@@ -8,8 +8,8 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 
 public class ArcticWindMqttConnectOptions extends MqttConnectOptions {
     public static boolean automaticReconnect = true;
-    public static String userName = "";
-    public static String password = "";
+    public static String userName = "arcticwind";
+    public static String password = "arcticwind";
     public static boolean cleanSession = false;
 
     public ArcticWindMqttConnectOptions(){

@@ -1,4 +1,4 @@
-package cn.bleedyao.androidcodebase;
+package cn.bleedyao.androidcodebase.bean;
 
 /**
  * Created by yaoluhao on 29/11/2017.

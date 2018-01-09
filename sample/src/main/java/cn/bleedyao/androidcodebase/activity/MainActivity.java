@@ -1,7 +1,8 @@
-package cn.bleedyao.androidcodebase;
+package cn.bleedyao.androidcodebase.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,14 +13,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import cn.bleedyao.androidcodebase.R;
+import cn.bleedyao.androidcodebase.adapter.TestAdapter;
 import cn.bleedyao.library.widget.recyclerview.OnItemClickListener;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String TAG = "fragment";
 
     private RecyclerView mRecycleView;
     private String[] strs = {"懒加载", "mqtt"};
     private List<String> datas = new ArrayList<>();
     private int[] layouts = new int[]{android.R.layout.simple_expandable_list_item_1};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         mRecycleView.setAdapter(adapter);
 
-
 //        mRecycleView.setAdapter(new TestMultiAdapter(this, contents, layouts));
     }
+
+
 }

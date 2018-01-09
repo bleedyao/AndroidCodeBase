@@ -1,4 +1,4 @@
-package cn.bleedyao.androidcodebase;
+package cn.bleedyao.androidcodebase.adapter;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import cn.bleedyao.androidcodebase.R;
+import cn.bleedyao.androidcodebase.bean.Content;
 import cn.bleedyao.library.widget.recyclerview.MultiLayoutsBaseAdapter;
 import cn.bleedyao.library.widget.recyclerview.ViewHolder;
 
